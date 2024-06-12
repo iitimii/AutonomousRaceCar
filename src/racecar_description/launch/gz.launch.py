@@ -19,6 +19,7 @@ def generate_launch_description():
     env_variable = SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path)
 
 
+
     model_arg = DeclareLaunchArgument(
         name="model",
         default_value=os.path.join(racecar_description_dir, "urdf", "racecar.xacro"),
